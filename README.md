@@ -1,2 +1,2 @@
-##Rock-Paper-Scissor
-Making Rock-Paper-Scissor game using java script 
+# Rock-Paper-Scissor
+Making `Rock-Paper-Scissor` game using java script 
