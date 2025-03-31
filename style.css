@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #312f3e;
+  color: white;
+}
+
+.body {
+  display: flex;
+}
+.hero-section {
+  margin: 200px auto;
+  justify-items: center;
+  align-content: center;
+  background-color: #302347;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+.hero-section > p {
+  background: none;
+  margin: 10px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.btn {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  background: #c59223;
+  min-width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border-color: white;
+}
