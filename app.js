@@ -27,6 +27,5 @@ function compare(condition) {
     result = "Computer wins";
   }
 
-  output(computerMove, checking);
   alert(`You picked ${checking}. Computer picked ${computerMove}. ${result}`);
 }
