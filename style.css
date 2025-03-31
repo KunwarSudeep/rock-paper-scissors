@@ -15,6 +15,7 @@
   background-color: #302347;
   min-width: 400px;
   min-height: 400px;
+  border-radius: 30px;
 }
 
 .hero-section > p {
