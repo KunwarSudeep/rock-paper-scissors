@@ -36,6 +36,26 @@
   min-width: 100px;
   height: 100px;
   border-radius: 50px;
-  border-color: white;
-  /* border-color: black; */
+  border: none;
+}
+
+.btn:active {
+  background-color: #7b5e1d;
+}
+
+.reset {
+  padding: 20px;
+  background: none;
+}
+
+.reset-btn {
+  background: #9a2929;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+.reset-btn:active {
+  background: #561717;
 }

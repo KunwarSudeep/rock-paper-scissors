@@ -1,3 +1,9 @@
+const scores = {
+  wins: 0,
+  loses: 0,
+  tie: 0,
+};
+
 function check() {
   const randomNumber = Math.random();
 
@@ -12,20 +18,35 @@ function check() {
 
 function compare(condition) {
   const computerMove = check();
-  const checking = condition;
+  const yourMove = condition;
   let result;
 
-  if (computerMove === checking) {
+  if (computerMove === yourMove) {
     result = "Tie.";
   } else if (
-    (checking === "rock" && computerMove === "scissors") ||
-    (checking === "paper" && computerMove === "rock") ||
-    (checking === "scissors" && computerMove === "paper")
+    (yourMove === "rock" && computerMove === "scissors") ||
+    (yourMove === "paper" && computerMove === "rock") ||
+    (yourMove === "scissors" && computerMove === "paper")
   ) {
     result = "You win";
   } else {
-    result = "Computer wins";
+    result = "You loose";
   }
 
-  alert(`You picked ${checking}. Computer picked ${computerMove}. ${result}`);
+  if (result === "You win") {
+    scores.wins += 1;
+  } else if (result === "You loose") {
+    scores.loses += 1;
+  } else {
+    scores.tie += 1;
+  }
+
+  alert(`You picked ${yourMove}. Computer picked ${computerMove}. ${result}
+    Win: ${scores.wins}, Lose: ${scores.loses}, Tie: ${scores.tie}`);
+}
+
+function reset() {
+  scores.wins = 0;
+  scores.loses = 0;
+  scores.tie = 0;
 }
