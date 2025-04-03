@@ -1,2 +1,3 @@
 # Rock-Paper-Scissor
-Making `Rock-Paper-Scissor` game using java script 
+
+Making [Rock-Paper-Scissors](https://kunwarsudeep.github.io/rock-paper-scissors/) game using javascript.
